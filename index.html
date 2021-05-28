@@ -1,0 +1,120 @@
+<html>
+<link rel="icon" href="Ninja_-_Copy.png" sizes="32x32">
+<head>
+	<title>Coding Dojo Game</title>
+
+<style type="text/css">
+	body{
+		background-color:black;
+	}
+	#container{
+		background: url('coding-dojo.-squaremedium.jpg') repeat;
+		width:500px;
+		height:500px;
+
+	}
+	#hero{
+		background: url('top1.png') no-repeat;
+		/* background-position: -85px -180px; */
+		background-size: contain;
+		background-position: center;
+		border-radius: 50%;
+		width:28px;
+		height:28px;
+		position:absolute;
+		
+	}
+	.enemy1{
+		background: url('jimpic.JPG');
+		/* background-position: -30px -10px; */
+		background-size: contain;
+		background-position: center;
+		border-radius: 50%;
+		width:28px;
+		height:28px;
+		position:absolute;
+		/* transform: rotate(180deg); */
+	}
+	.explosion{
+		background: url('1942.gif');
+		background-position: -105px -30px;
+		width:40px;
+		height:40px;
+		position:absolute;
+	}
+	.enemy2{ 
+		background: no-repeat url('jimm2.0 - Copy.jpg');
+		/* background-position: -38px -104px; */
+		background-size: contain;
+		background-position: center;
+		width:56px;
+		height:56px;
+		position:absolute;
+		/* transform: rotate(180deg); */
+		/* border: 3px solid red;
+		top: 100px;
+		left: 400px; */
+	}
+	.bullet{
+		background: url('Ninja_-_Copy.png');
+		/* background-position: -185px -400px; */
+		background-size: contain;
+		background-position: center;
+		width:18px;
+		height:18px;
+		position:absolute;
+		transform: rotate(180deg);
+	}
+	#score{
+		position:absolute;
+		border:10px solid red;
+		top:20px;
+		left:600px;
+		background-color:white;
+		padding:10px;
+		font-size:30px;
+		font-family: Arial;	
+	}
+.rules{
+	color: white;
+}
+.heath_bar{
+	display: flex;
+	align-items: center;
+}
+h2{
+	color: white;
+	margin-right: 10px;
+}
+
+
+
+	
+</style>
+</head>
+<body>
+	<div id='container'>
+		<div id='hero'></div>
+		<div id='enemies'></div>
+		<div id='bullets'></div>
+		<div id="bombers"></div>
+		<div id="explosion"></div>
+	</div>
+	<div class="heath_bar">
+	<h2>Health Bar</h2>
+	<progress id="health" value="100" max="100"></progress>
+	</div>
+	<div class="rules">
+		<h1>Use the arrow keys to move left, right, up and down</h1>
+		<h1>And the spacebar to shoot</h1>
+	</div>
+	
+	<div id='score'>0</div>
+
+<audio id="loveit" src="jim-love-it (5).wav"></audio>
+<audio id="mymusic" src="Point of Clash (1).mp3"></audio>
+<audio id="throw" src="ninjastar.mp3"></audio>
+<script src="script.js"></script>
+
+</body>
+</html> 
